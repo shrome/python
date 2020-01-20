@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scrape/hello.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="image"></div>
+    <script src="scrape/hello.js"></script>
+    <script>
+        var answer = document.getElementById("image");
+        if (answ[0].length <= 2){
+            for (var j = 0 ; j < answ.length ; j++){
+                var words = document.createElement("P");
+                var ansimg = document.createElement("P");
+                var ansss = document.createTextNode(answ[j]);
+                var otherword = document.createTextNode(title[j]);
+                words.appendChild(otherword);
+                ansimg.appendChild(ansss);
+                answer.appendChild(words);
+                answer.appendChild(ansimg);
+            }
+        }else{
+            for (var j = 0 ; j < answ.length ; j++){
+                var words = document.createElement("P");
+                var ansimg = document.createElement("IMG");
+                var otherword = document.createTextNode(title[j]);
+                words.appendChild(otherword);
+                ansimg.src = answ[j];
+                answer.appendChild(words);
+                answer.appendChild(ansimg);
+                if (widthAnsw[j] < 1000){
+                    ansimg.style.width = "auto";
+                }else{
+                    ansimg.style.width = "100%";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
